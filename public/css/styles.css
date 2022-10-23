@@ -1,0 +1,202 @@
+ /* 
+ File name: styles.css
+ Author: Wilson Rodriguez Arellano
+ Student Id: 301232505
+ Date: 2022-10-23
+ */
+
+ .animation {
+     animation-duration: 5s;
+     animation-name: animatedText;
+
+ }
+
+ @keyframes animatedText {
+
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .animationToStart {
+     animation: cursor .5s infinite, writing 3.5s, animatedText 8s;
+     color: white;
+     border-right: solid white;
+     white-space: nowrap;
+
+
+
+ }
+
+ @keyframes cursor {
+     0% {
+         border-color: transparent;
+     }
+
+     50% {
+         border-color: white;
+     }
+ }
+
+ @keyframes writing {
+     from {
+         width: 0%;
+     }
+
+     to {
+         width: 100%;
+     }
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .animationToStart:hover {
+     color: rgb(130, 7, 245);
+ }
+
+
+
+ body {
+     margin: 0;
+     background-color: black;
+     font-family: 'PT Sans', sans-serif;
+
+ }
+
+ .bg {
+     text-align: center;
+     padding: 10px;
+     height: 100vh;
+     background-size: cover;
+     box-sizing: border-box;
+     filter: blur(8px);
+
+ }
+
+ .bg-text {
+     color: white;
+     font-weight: bold;
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+     width: 80%;
+     padding: 20px;
+     text-align: center;
+     font-family: 'Silkscreen', cursive;
+
+ }
+
+ .home {
+     background-image: url("../img/bgIndex.jpg");
+ }
+
+ .all-wide {
+     background-color: whitesmoke;
+ }
+
+ .bg-white {
+     background-color: whitesmoke;
+ }
+
+ .padding-top {
+     padding-top: 30px;
+ }
+
+ .after-cover-decoration {
+     background-color: rgb(42, 14, 69);
+     color: white;
+     height: 50px;
+     text-align: center;
+     width: 100%;
+ }
+
+ .inside {
+     display: inline-block;
+     width: 10.8%;
+ }
+
+ .after-cover-decoration p {
+     font-size: 30px;
+     font-family: 'Silkscreen';
+     border-right: 2.5px solid white;
+     animation: cursor .5s infinite, writing2 4s steps(20, end) infinite;
+     white-space: nowrap;
+     overflow: hidden;
+     padding: 0%;
+ }
+
+ @keyframes cursor2 {
+     0% {
+         border-color: transparent;
+     }
+
+     50% {
+         border-color: white
+     }
+ }
+
+ @keyframes writing2 {
+     from {
+         width: 0
+     }
+
+     to {
+         width: 100%;
+     }
+ }
+
+ .border-left {
+     border-left: 2px solid grey;
+
+ }
+
+ .less-width {
+     width: 80%;
+     margin-left: 10%;
+ }
+
+ .xl-padding-top {
+     padding-top: 60px;
+ }
+
+ .center-text-container {
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+ }
+
+ .purple-bg {
+     background-color: rgb(130, 7, 245);
+ }
+
+ #purple-bg:hover {
+     background-color: black;
+ }
+
+ .form-container {
+     width: 60%;
+ }
+
+ .margin-bottom {
+     margin-bottom: 80px;
+ }
+
+ .card-body {
+     background-color: rgb(61, 14, 105);
+     color: #fff;
+     border-bottom-left-radius: 1.5%;
+     border-bottom-right-radius: 1.5%;
+ }
+
+ .purple-hover:hover {
+     color: rgb(61, 14, 105);
+ }

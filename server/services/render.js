@@ -17,3 +17,7 @@ exports.services = (req, res) => {
 exports.projects = (req, res) => {
     res.render('projects');
 }
+
+exports.resumen = (req, res) => {
+    res.render('C:\Users\Wilson\Desktop\Portfolio\public\pdf\Wilson_Rodriguez_resumen.pdf')
+}

@@ -72,7 +72,7 @@
  .bg {
      text-align: center;
      padding: 10px;
-     height: 100vh;
+     height: 100%;
      background-size: cover;
      box-sizing: border-box;
      filter: blur(8px);
@@ -95,6 +95,7 @@
  }
 
  .home {
+
      background-image: url("../img/bgIndex.jpg");
  }
 
@@ -120,7 +121,7 @@
 
  .inside {
      display: inline-block;
-     width: 10.8%;
+     width: 168px;
  }
 
  .after-cover-decoration p {

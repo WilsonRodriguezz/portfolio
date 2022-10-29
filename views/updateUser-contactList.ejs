@@ -1,0 +1,75 @@
+<!--Include header-->
+<%- include ('include/_header-list') -%>
+  <!--Close header-->
+
+  <!--Include main-->
+  <!--Main-->
+  <main id="site-main">
+    <div class="container">
+      <div class="box-nav d-flex-justify-between">
+        <a href="/secure/list-users"><i class="fas fa-angle-double-left"></i>
+          All Users
+        </a>
+
+      </div>
+
+      <!--Form handling-->
+      <div class="container-sm">
+        <h5 class="text-center">Update user</h5>
+        <h6 class="small text-center">Use the form below update an old account</h6>
+        <div class="container text-center form-container">
+          <form class="row g-3" method="post" id="update_user">
+            <input type="hidden" class="form-control" name="id" value="<%= user._id%>">
+            <div class="col-md-6">
+              <label for="inputFirstName" class="form-label">First name</label>
+              <input type="text" class="form-control" name="name" value="<%= user.name%>">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" name="lastName" value="<%= user.lastName%>">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" value="<%= user.email%>">
+            </div>
+            <div class="col-12">
+              <label for="inputPhoneNumber" class="form-label">Phone number</label>
+              <input type="text" class="form-control" name="phoneNumber" value="<%= user.phoneNumber%>">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea class="form-control" name="message" value="<%= user.message%>" rows="3"></textarea>
+            </div>
+
+            <div class="row ">
+              <div class="col-4">
+                <button type="button" class="btn btn-warning" id="purple-bg"><a class="btn text-light border-shadow"
+                    href="/secure/list-users">Return</a></button>
+              </div>
+              <div class="col-4">
+                <button type="submit" class="btn btn-primary border-shadow">Save</button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="btn btn-danger"><a class="btn text-light border-shadow delete"
+                    data-id=<%=user._id%>>
+                    Delete</button>
+                </a>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+
+      <!--/Form handling-->
+
+    </div>
+  </main>
+  <!--/Main-->
+  <!--Close main-->
+
+  <!--Include footer-->
+  <%- include ('include/_footer-list') -%>
+    <!--Close footer-->

@@ -183,6 +183,11 @@
      background-color: black;
  }
 
+ #authenticationButton:hover {
+     background-color: black;
+ }
+
+
  .form-container {
      width: 60%;
  }
@@ -200,4 +205,24 @@
 
  .purple-hover:hover {
      color: rgb(61, 14, 105);
+ }
+
+ .authenticationArea {
+
+     width: 80%;
+     height: fit-content;
+     margin: auto;
+     background-color: rgb(113, 81, 238, 0.4);
+     box-sizing: border-box;
+     border-radius: 3%;
+
+ }
+
+ .big {
+     width: 80%;
+ }
+
+ .text-form {
+     font-family: 'Fjalla One', sans-serif;
+
  }

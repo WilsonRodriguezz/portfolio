@@ -1,0 +1,35 @@
+<%- include ('include/_header') -%>
+    <!--Close header-->
+
+    <%- include ('include/_nav') -%>
+        <!--Close navbar-->
+
+        <div class="bg home"></div>
+        <div class="bg-text container">
+            <div class="authenticationArea">
+                <div class="container text-form text-light">
+                    <h1 class="xl-padding-top margin-bottom"> Security Access</h1>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="First name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col padding-top margin-bottom">
+                                <input type="text" class="form-control" placeholder="Password" aria-label="Last name">
+                            </div>
+                        </div>
+                        <button type="button" class="btn  margin-bottom  big btn-dark" id="authenticationbutton"><a
+                                href="/secure/list-users" class="text-light">Log
+                                in</a></button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--Include footer-->
+        <%- include ('include/_footer') -%>
+            <!--Close footer-->

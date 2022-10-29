@@ -3,28 +3,54 @@
 //Date: 2022-10-23
 //File name: app.js
 
-const { name } = require("ejs");
+//add new user 
+$("#add_user").submit(function (event) {
+    alert("Data inserted succesfully!");
+})
 
-//Function to capture data from the contact form
-function capture() {
-    var firstName = document.getElementById("inputFirstName").value;
-    console.log(firstName);
-    var lastName = document.getElementById("inputLastName").value;
-    console.log(lastName);
-    var email = document.getElementById("inputEmail").value;
-    console.log(email);
-    var phoneNumber = document.getElementById("inputPhoneNumber").value;
-    console.log(phoneNumber);
-    var city = document.getElementById("inputCity").value;
-    console.log(city);
-    var state = document.getElementById("inputState").value;
-    console.log(state);
-    var zip = document.getElementById("inputZip").value;
-    console.log(zip);
-    var message = document.getElementById("inputMessage").value;
-    console.log(message);
 
-    //Alert to confitm the input collection
-    alert("Input confirmation");
 
-}
+//update user
+$("#update_user").submit(function (event) {
+
+    event.preventDefault();
+    var unindexed_array = $("#update_user").serializeArray();
+
+    var data = {};
+
+    $.map(unindexed_array, function (n, i) {
+        data[n['name']] = n['value']
+    })
+    console.log(data);
+
+    var request = {
+        "url": `http://localhost:3000/api/users/${data.id}`,
+        "method": "PUT",
+        "data": data
+    }
+    $.ajax(request).done(function (response) {
+        alert("Data updated succesfully!")
+    })
+})
+
+//deleteUser
+
+$ondelete = $("a.delete");
+$ondelete.click(function () {
+    var id = $(this).attr("data-id")
+
+    var request = {
+        "url": `http://localhost:3000/api/users/${id}`,
+        "method": "DELETE"
+    }
+
+    if (confirm("Do you really want to delete this record?")) {
+        $.ajax(request).done(function (response) {
+            alert("Data deleted succesfully!");
+            document.location.replace('http://localhost:3000/secure/list-users');
+        })
+    }
+
+})
+
+

@@ -43,57 +43,33 @@
                         </p>
                     </div>
                     <div class="container text-center form-container">
-                        <form class="row g-3">
+                        <form class="row g-3" action="/api/users" method="post" id="add_user">
+                            <input type="hidden" class="form-control" name="id">
                             <div class="col-md-6">
                                 <label for="inputFirstName" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="inputFirstName">
+                                <input type="text" class="form-control" name="name">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputLastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="inputLastName">
+                                <input type="text" class="form-control" name="lastName">
                             </div>
                             <div class="col-12">
                                 <label for="inputEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail"
-                                    placeholder="example@gmail.com">
+                                <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
                             </div>
                             <div class="col-12">
                                 <label for="inputPhoneNumber" class="form-label">Phone number</label>
-                                <input type="text" class="form-control" id="inputPhoneNumber"
-                                    placeholder="xxx-xxx-xxxx">
+                                <input type="text" class="form-control" name="phoneNumber" placeholder="xxx-xxx-xxxx">
                             </div>
-                            <div class="col-md-6">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">State</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>ON</option>
-                                    <option>NB</option>
-                                    <option>MB</option>
-                                    <option>BC</option>
-                                    <option>QC</option>
-                                    <option>NS</option>
-                                    <option>PE</option>
-                                    <option>SK</option>
-                                    <option>AB</option>
-                                    <option>NL</option>
-                                    <option>Outside Canada</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
+
                             <div class="mb-3">
                                 <label for="inputMessage" class="form-label">Message</label>
-                                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                                <textarea class="form-control" name="message" rows="3"></textarea>
                             </div>
 
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary purple-bg" id="purple-bg"
-                                    onclick="capture()"><a href="/home" class="text-light">Sign in</a></button>
+                                <button type="submit" class="btn btn-primary purple-bg" id="purple-bg">
+                                    Send</button>
                             </div>
                         </form>
                     </div>

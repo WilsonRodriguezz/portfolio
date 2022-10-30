@@ -9,21 +9,33 @@
             <div class="authenticationArea">
                 <div class="container text-form text-light">
                     <h1 class="xl-padding-top margin-bottom"> Security Access</h1>
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="First name">
-                            </div>
+                    <!--Message area-->
+                    <% if(messages.length> 0) {%>
+                        <div class="alert alert-danger">
+                            <%=messages%>
                         </div>
-                        <div class="row">
-                            <div class="col padding-top margin-bottom">
-                                <input type="text" class="form-control" placeholder="Password" aria-label="Last name">
-                            </div>
-                        </div>
-                        <button type="button" class="btn  margin-bottom  big btn-dark" id="authenticationbutton"><a
-                                href="/secure/list-users" class="text-light">Log
-                                in</a></button>
-                    </form>
+                        <%}%>
+                            <!---->
+                            <form method="POST" autocomplete="off">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Username" name="username"
+                                            id="username" required autofocus>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col padding-top margin-bottom">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            name="password" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="padding-bottom">
+                                    <input type="submit" class="btn btn-dark" value="Login">
+                                    <a href="/">
+                                        <input type="button" class="btn btn-warning" value="Cancel">
+                                    </a>
+                                </div>
+                            </form>
                 </div>
 
 

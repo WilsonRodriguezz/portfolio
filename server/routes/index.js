@@ -33,9 +33,9 @@ route.get('/services', services.services);
 
 route.get('/projects', services.projects);
 
-route.get('/secure/list-users', requireAuth, services.usersList);
+/*route.get('/secure/list-users', requireAuth, services.usersList);
 
-route.get('/secure/update-user', requireAuth, services.updateUser);
+route.get('/secure/update-user', requireAuth, services.updateUser);*/
 
 
 
@@ -49,14 +49,14 @@ route.delete('/api/users/:id', controller.delete);
 
 //Users api
 //for processing login page
-route.get('/secure', controller.displayLoginPage);
-route.post('/secure', controller.processLoginPage);
+/*route.get('/secure', controller.displayLoginPage);*/
+/*route.post('/secure', controller.processLoginPage);*/
 
 
 
 
 //to perform logout page
-route.get('/logout', controller.performLogout)
+/*route.get('/logout', controller.performLogout)*/
 module.exports = route;
 
 

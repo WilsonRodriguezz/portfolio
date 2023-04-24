@@ -27,7 +27,7 @@ exports.secure = (req, res) => {
 exports.usersList = (req, res) => {
   //make a get request to /api/users
   axios
-    .get('http://wilsonrodriguezzportfolio.onrender.com//api/users')
+    .get('http://wilsonrodriguezzportfolio.onrender.com/api/users')
     .then(function (response) {
       res.render('index-contactList', { users: response.data });
     })
@@ -38,7 +38,7 @@ exports.usersList = (req, res) => {
 
 exports.updateUser = (req, res) => {
   axios
-    .get('http://wilsonrodriguezzportfolio.onrender.com//api/users', {
+    .get('http://wilsonrodriguezzportfolio.onrender.com/api/users', {
       params: { id: req.query.id },
     })
     .then(function (userdata) {

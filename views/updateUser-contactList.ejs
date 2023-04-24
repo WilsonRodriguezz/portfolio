@@ -18,7 +18,7 @@
         <h5 class="text-center">Update user</h5>
         <h6 class="small text-center">Use the form below update an old account</h6>
         <div class="container text-center form-container">
-          <form class="row g-3" method="post" id="update_user">
+          <form class="row g-3" method="put" id="update_user" action="/api/users/:<%= user._id%>">
             <input type="hidden" class="form-control" name="id" value="<%= user._id%>">
             <div class="col-md-6">
               <label for="inputFirstName" class="form-label">First name</label>

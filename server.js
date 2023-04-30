@@ -47,7 +47,7 @@ passport.deserializeUser(User.deserializeUser());
 
 dotenv.config({ path: 'config.env' });
 
-const PORT = process.env.PORT || 8080;
+const PORT = /*process.env.PORT*/ 3000 || 8080;
 
 //log request
 app.use(morgan('tiny'));

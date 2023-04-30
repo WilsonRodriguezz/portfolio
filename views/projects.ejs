@@ -1,92 +1,201 @@
 <!--Include header-->
 <%- include ('include/_header') -%>
-    <!--Close header-->
+<!--Close header-->
 
-    <%- include ('include/_nav') -%>
-        <!--Close navbar-->
+<%- include ('include/_nav') -%>
+<!--Close navbar-->
 
-        <div class="bg home"></div>
-        <div class="bg-text container animation">
-            <h1>My work</h1>
+<div class="bg home"></div>
+<div class="bg-text container animation">
+  <h1>My work</h1>
+</div>
+
+<!--Include animation-->
+<%- include ('include/_animation') -%>
+<!--Include animation-->
+
+<div class="all-wide">
+  <div class="container text-light all-wide">
+    <div
+      class="container text-center padding-top text-dark"
+      style="display: flex; flex-direction: column; gap: 40px"
+    >
+      <h2 class="margin-bottom xl-padding-top">My projects</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <h4 id="GameOfChance">Game Of Chance</h4>
+          <div class="card shadow-sm">
+            <img src="img/dice.jpg" alt="Dice image" />
+
+            <div class="card-body">
+              <p class="card-text">
+                This project is based on a probability (console) game where you
+                have to throw two dice and expect to win if you get certain
+                result. Made with Java
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/WilsonRodriguezz/GameOfChance"
+                      class="text-dark"
+                      target="_blank"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col">
+          <h4 id="JFX">JavaFX Form</h4>
+          <div class="card shadow-sm">
+            <img src="img/JavaFX.jpg" alt="65 square image" />
 
-        <!--Include animation-->
-        <%- include ('include/_animation') -%>
-            <!--Include animation-->
+            <div class="card-body">
+              <p class="card-text">
+                This project is based on the development of a complete form made
+                with JavaFx. Contains FXML and a controller class to perform
+                actions through event handlers.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/WilsonRodriguezz/StudentFormDisplayInfo"
+                      class="text-dark"
+                      target="_blank"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4 id="Portfolio">Personal Portfolio</h4>
+          <div class="card shadow-sm">
+            <img src="img/cover.jpg" class="img-fluid" alt="Portfolio site" />
 
-            <div class="all-wide">
-                <div class="container text-light all-wide">
-                    <div class="container text-center padding-top text-dark">
-                        <h2 class="margin-bottom xl-padding-top">My projects</h2>
+            <div class="card-body">
+              <p class="card-text">
+                My personal portfolio where I include information about me, my
+                services, my prjects, and how to get in touch with me. Made with
+                HTML, CSS, JavaScript.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/WilsonRodriguezz/portfolio"
+                      target="_blank"
+                      class="text-dark"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+        style="margin-bottom: 60px"
+      >
+        <div class="col">
+          <h4 id="BlogHub">The Blog Hub</h4>
+          <div class="card shadow-sm">
+            <img
+              src="img/bloghub.jpeg"
+              alt="blogHub image"
+              style="width: 100%"
+            />
 
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col">
-                                <h4 id="GameOfChance">Game Of Chance</h4>
-                                <div class="card shadow-sm">
-                                    <img src="img/dice.jpg" alt="Dice image">
+            <div class="card-body">
+              <p class="card-text">
+                This project is a web app created to write, edit and delete
+                articles. You just need to register, login and start writing,
+                Made with MySQL, Express.js, React, Node.js
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/WilsonRodriguezz/React-BlogSiteApp"
+                      class="text-dark"
+                      target="_blank"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4 id="ISS">ISS Centennial</h4>
+          <div class="card shadow-sm">
+            <img src="img/ISSCentennial.jpeg" alt="ISSCentennial image" />
 
-                                    <div class="card-body">
-                                        <p class="card-text">This project is based on a probability (console) game
-                                            where you have to throw two dice and expect to win if you get certain
-                                            result. Made with Java
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-light"><a
-                                                        href="https://github.com/WilsonRodriguezz/GameOfChance"
-                                                        class="text-dark" target="_blank">View more</a></button>
-                                            </div>
+            <div class="card-body">
+              <p class="card-text">
+                The ISS Centennial team developed a web app to help
+                international students establish in Canada and find a job
+                easier. Built with Node.js, Express.js and MongoDB.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/Mandeep180/ISSgProject"
+                      class="text-dark"
+                      target="_blank"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4 id="Nova">Novarquitect Portfolio</h4>
+          <div class="card shadow-sm">
+            <img
+              src="img/Novarquitect.jpeg"
+              class="img-fluid"
+              alt="Novarquitect site"
+            />
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h4 id="JFX">JavaFX Form</h4>
-                                <div class="card shadow-sm">
-                                    <img src="img/JavaFX.jpg" alt="65 square image">
-
-                                    <div class="card-body ">
-                                        <p class="card-text">This project is based on the development of a complete
-                                            form made with JavaFx. Contains FXML and a controller
-                                            class to perform actions through event handlers.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-light"><a
-                                                        href="https://helpusdefend.com/?page_id=840" class="text-dark"
-                                                        target="_blank">View more</a></button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <h4 id="Portfolio">Personal Portfolio</h4>
-                                <div class="card shadow-sm">
-                                    <img src="img/cover.jpg" class="img-fluid" alt="Portfolio site">
-
-                                    <div class="card-body">
-                                        <p class="card-text">My personal portfolio where I include information about me,
-                                            my services, my prjects, and how to get in touch with me. Made with HTML,
-                                            CSS, JavaScript.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-light"><a
-                                                        href="https://github.com/WilsonRodriguezz/portfolio"
-                                                        target="_blank" class="text-dark">View more</a></button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <!--Include footer-->
-                    <%- include ('include/_footer') -%>
-                        <!--Close footer-->
+            <div class="card-body">
+              <p class="card-text">
+                Novarquitect professional portfolio where administrators users
+                can upload projects information from a UI. Made with Node.js,
+                MongoDB, Express.js.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-light">
+                    <a
+                      href="https://github.com/WilsonRodriguezz/novarquitec"
+                      target="_blank"
+                      class="text-dark"
+                      >View more</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Include footer-->
+    <%- include ('include/_footer') -%>
+    <!--Close footer-->
+  </div>
+</div>
